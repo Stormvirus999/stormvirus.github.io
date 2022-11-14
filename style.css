@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+html{
+scroll-behavior:smooth;
+
+}
+body{
+    background-image: url(images/bg.jpg);
+    color:#fff;
+
+}
+#header{
+
+    height: 100vh;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+
+}
+.container{
+    padding: 5px 5%;
+
+
+}
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+
+    height: 400px;
+    width: 500px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+
+
+        color:#fff;
+        text-decoration: none;
+        position: relative;
+        font-size: 18px;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:red;
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    transition:0.2s;
+}
+nav ul li a:hover::after{
+
+    width: 100%;
+}
+
+.header-text{
+    padding-top: 2%;
+    font-size: 40px;
+}
+.header-text  span{
+
+    color: red;
+}
+
+/* -------------------------about----------------------- */
+#about{
+    padding: 80px 0;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+
+    width: 380px;
+    height: 500px;
+    border-radius: 5%;
+}
+.about-col-2{
+    flex-basis: 65%;
+}
+.subtitle{
+    font-size: 53px;
+}
+
+/*------------------------------tabtitles-----------------------------*/
+
+.tab-titles{
+    display: flex;
+    margin: 20px 40px;
+}
+.tab-links{
+    margin-right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0pc;
+    bottom:-6px;
+    transition: 0.2s;
+
+}
+.tab-links.active-link::after{
+    width:50%;
+}
+.tab-contents ul li{
+
+    list-style: none;
+    margin: 20px 0;
+    color: red;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+
+}
+
+/* ========================================services================================================== */
+
+#services{
+    padding: 30px, 0;
+}
+.serviceslist{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.serviceslist div{
+
+    background-color: #262626;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 5%;
+}
+.serviceslist div h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.serviceslist div a{
+    text-decoration: none;
+    color: #ffff;
+    display: inline-block;
+}
+
+
+/* ----------------------------------------------------careers----------------------------------------------------------- */
+
+#careers{
+    padding:  50px 0;
+
+}
+
+.job{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.job div{
+
+    background-color: #262626;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 5%;
+}
+.job div h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.job div a{
+    text-decoration: none;
+    color: #ffff;
+    display: inline-block;
+}
+/* #redt{
+    background-color: #de473c;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 5%;
+}
+#bluet{
+    background-color: #4c53e6;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 5%;
+}
+#ciso{
+    background-image: linear-gradient(to right, #de473c , #4c53e6); 
+    background-image: linear-gradient(to right, red,blue);
+
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 5%;
+} */
+
+/*  -----------------------------------Contact us-------------------------------------------------------*/
+#contactus{
+
+    justify-content: center;
+}
+.contactform{
+    justify-content: center;
+}
+form{
+
+        background-color: #262626;
+        display: flex;
+        flex-direction: column;
+            padding: 2vw , 4vw;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px ;
+}
+
+form h3{
+    padding: 20px;
+        color: #fff;
+        font-weight: 800;
+        
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px,10px;
+    padding: 20px;
+    outline:none;
+    background:#ffff;
+    font-size: 16px;
+    color: #262626;
+
+}
+form button{
+    padding: 15px;
+    background: red;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+     margin: 20px auto 0;
+     border-radius: 30px;
+}
