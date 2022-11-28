@@ -27,5 +27,5 @@ form.addEventListener('submit', e => {
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => console.log('Success!',response()))
     .catch(error => console.error('Error!', error.message))
-    window.alert("Thanks for your query we will response ASAP!!!");
+    window.alert("Thanks for your query we will respond ASAP!!!");
 })
